@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "beyond_arsenal:block/raw_chud_block"
+  }
+}
