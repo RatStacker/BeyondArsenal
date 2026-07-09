@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+    "ingredients": [
+      {
+        "item": "beyond_arsenal:raw_chud_block"
+      }
+    ],
+  "result": {
+    "item": "beyond_arsenal:raw_chud",
+    "count": 9
+  }
+}
