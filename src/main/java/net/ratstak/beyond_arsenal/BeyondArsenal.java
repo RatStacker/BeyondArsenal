@@ -39,6 +39,15 @@ public class BeyondArsenal
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext.get().getModEventBus().addListener(
+                (net.minecraftforge.client.event.RegisterGuiOverlaysEvent event) -> {
+                    event.registerAboveAll(
+                            "ammo_hud_overlay", // <-- Just a plain string name now!
+                            net.ratstak.beyond_arsenal.item.overlay.HUD_ELEMENT
+                    );
+                }
+        );
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
