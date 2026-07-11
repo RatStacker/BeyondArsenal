@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(Moditems.CHUD.get());
                         pOutput.accept(Moditems.RAW_CHUD.get());
+                        pOutput.accept(Moditems.CHUDSIXER.get());
 
                         pOutput.accept(ModBlocks.CHUD_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_CHUD_BLOCK.get());

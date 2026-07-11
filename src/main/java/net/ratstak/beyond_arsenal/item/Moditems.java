@@ -14,6 +14,8 @@ public class Moditems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CHUD = ITEMS.register("raw_chud",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHUDSIXER = ITEMS.register("chudsixer",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
